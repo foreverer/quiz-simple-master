@@ -5,6 +5,8 @@
  */
 const getHostName = (url) => {
   // 请实现……
+  url = url.match(/([a-zA-Z]{3,6}\.)+([a-z]{2,3})/g);
+  return url;
 };
 
 // * ---------------- 实现的效果：

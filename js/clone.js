@@ -6,6 +6,18 @@
 
 // * ---------------- 实现的效果：
 
+var clone = function (data) {
+  var mirrorData = {};
+  if (data instanceof Array){
+    mirrorData = [];
+  }
+  for (var key in data) {
+    var i = data[key];
+    mirrorData[key] = typeof i === 'object' ? clone(i):i;
+  }
+  return mirrorData;
+};
+
 {
   const data = {
     person: [

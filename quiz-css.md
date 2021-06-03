@@ -30,6 +30,15 @@ Demo 代码可以新建一个或多个文件（不限），
 }
 ```
 
+<style>
+.container {
+  display: flex;
+}
+.container.div {
+  flex: 1;
+}
+</style>
+
 ## Q2
 
 你用过哪些 CSS 的方法论和工具  
@@ -44,4 +53,5 @@ Demo 代码可以新建一个或多个文件（不限），
 > }
 > ```
 
-答：
+答：OOCSS 面向对象的CSS，使得CSS模块化。
+    SMACSS 对于CSS的可扩展性和模块化架构，可以将CSS分类。
